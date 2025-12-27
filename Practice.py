@@ -313,9 +313,9 @@ elif len(lst) % 2 == 0:
     middle_items = [lst[mid - 1], lst[mid]]
 else:
     middle_items = [lst[mid - 1], lst[mid], lst[mid + 1]]
-print(middle_items)
+print(middle_items) # type: ignore
 
-print(middle_items)
+print(middle_items) # type: ignore
 
 lst = input().split(",")
 
@@ -364,7 +364,7 @@ else:
 
 def not_mutual_friends(list1, list2):
     # Write your code below
-    output_list = set(list1,list2)
+    output_list = set(list1,list2) # type: ignore
     print(output_list)
 list1 = input().split(",")
 list2 = input().split(",")
@@ -413,7 +413,7 @@ def create_student_dict(name, age, major):
     major = input()
 
 
-create_student_dict()
+create_student_dict("raghu", 212, major=2)
 
 def calculate_discount(price, discount_percentage):
     # Write code here
@@ -550,4 +550,17 @@ def check_inventory(products, quantities):
         print("Grapes quantity is not tracked.")
 
 check_inventory(["Cherries","Oranges","Watermelons","Apples"],{"Pears":15,"Cherries":40,"Apples":25})
+
+def create_exhibit_label(full_name, project_title):
+    # Write code here
+    req_name = full_name[0:3].upper()
+    print(req_name)
+    return f"{req_name} - {project_title}"
+
+
+
+result = create_exhibit_label("John Doe","Volcano Eruption Model")
+print(result)
+
+
 

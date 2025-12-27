@@ -4,6 +4,9 @@ This repository contains my **daily Python learning practice**, covering core co
 It reflects my continuous learning journey as a **Data Analyst** and **Aspiring Data Engineer**.
 
 ---
+👤 Author
+
+Kishor Thadi Aspiring Data Analyst / Data Engineer Learning Python through hands-on projects
 
 ## 📌 Purpose
 - Strengthen Python fundamentals
