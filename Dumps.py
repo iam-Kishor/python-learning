@@ -34,13 +34,21 @@
 
 # Get inputs from the user
 
-def filter_and_square_set(input_set):
-    # Write code here
-    output_set = set()
-    for i in input_set:
-        if i % 2 == 1:
-            req = i*i
-            output_set.add(req)
-    print(sorted(list(output_set)))
+# def filter_and_square_set(input_set):
+#     # Write code here
+#     output_set = set()
+#     for i in input_set:
+#         if i % 2 == 1:
+#             req = i*i
+#             output_set.add(req)
+#     print(sorted(list(output_set)))
 
-filter_and_square_set({10,11,12,13,14})
+# filter_and_square_set({10,11,12,13,14})
+
+
+
+
+
+
+
+

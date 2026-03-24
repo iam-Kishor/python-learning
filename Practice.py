@@ -562,5 +562,71 @@ def create_exhibit_label(full_name, project_title):
 result = create_exhibit_label("John Doe","Volcano Eruption Model")
 print(result)
 
+numbers = [42, 17, 23, 56, 9, 34]
+words = ["kiwi", "apple", "banana", "cherry", "date"]
 
+print(f"Smallest number: {min(numbers)}")
+print(f"Largest number: {max(numbers)}")
+print(f"Smallest word: {min(words)}")
+print(f"Largest word: {max(words)}")
+
+# Starter inputs
+numbers = [5, 3, 8, 1, 2]
+words = ["elephant", "cat", "dolphin", "bee"]
+
+ascending_numbers = sorted(numbers)
+descending_numbers = sorted(numbers, reverse = True)
+alphabetical_words = sorted(words)
+length_sorted_words = sorted(words, key = len) #key = len means length of string here
+
+print("Ascending:", ascending_numbers)
+print("Descending:", descending_numbers)
+print("Alphabetical:", alphabetical_words)
+print("By Length:", length_sorted_words)
+
+def calculate_average_score(scores):
+    # Write code here
+    if len(scores) == 0:
+        return 0
+    else:
+        avg = sum(scores)/len(scores)
+        return avg
+    
+result = calculate_average_score([95,85,76,89,100,92,67])
+print(result)
+
+def analyze_grades(grades):
+    # Calculate the average grade
+    average = sum(grades.values()) / len(grades)
+    
+    # Find the highest and lowest grades
+    highest = max(grades.values())
+    lowest = min(grades.values())
+    
+    # Find students with the highest and lowest grades
+    top_student = [name for name, grade in grades.items() if grade == highest][0]
+    bottom_student = [name for name, grade in grades.items() if grade == lowest][0]
+    
+    # Return the results as a dictionary
+    return {
+        'average': round(average, 2),
+        'highest': highest,
+        'lowest': lowest,
+        'top_student': top_student,
+        'bottom_student': bottom_student
+    }
+
+# Test the function
+student_grades = {'Alice': 85, 'Bob': 92, 'Charlie': 78, 'David': 95, 'Eve': 88}
+result = analyze_grades(student_grades)
+print(result)
+
+import time
+
+def task():
+    time.sleep(2)
+    print("Task completed")
+
+task()
+task()
 
